@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DarkGreyMediumTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:text="Order No."/>
+
+        <TextView
+            android:id="@+id/tvOrderDate"
+            style="@style/DarkGreyMediumTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:text="Date"/>
+
+
+        <TextView
+            android:id="@+id/tvOrderTime"
+            style="@style/DarkGreyMediumTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:text="Time"/>
+        <TextView
+            android:id="@+id/tvWaiterName"
+            style="@style/DarkGreyMediumTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:text="Waiter Name"/>
+
+        <TextView
+            android:id="@+id/tvDelivery"
+            style="@style/DarkGreyMediumTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:text="Delivery"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</LinearLayout>

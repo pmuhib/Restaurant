@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#FFFFFF">
+    <include layout="@layout/app_toolbar"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_restart"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/btnRestart"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_margin="@dimen/dp_5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_printerlist"
+        android:id="@+id/txtList"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_margin="@dimen/dp_5"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <ListView
+        android:id="@+id/lstReceiveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#ffffff"/>
+
+</LinearLayout>

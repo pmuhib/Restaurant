@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:padding="@dimen/dp_10"
+        tools:context="com.tabqy1.fragments.AboutFragment">
+
+        <TextView
+            android:id="@+id/reciept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:text="@string/receipt"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/reciept_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_served_by_value"
+            android:layout_toRightOf="@+id/reciept"
+            android:padding="@dimen/dp_5"
+            android:text="234567"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reciept"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:text="@string/date"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+
+        <TextView
+            android:id="@+id/tv_date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_served_by_value"
+            android:layout_below="@+id/reciept"
+            android:layout_toRightOf="@+id/tv_date"
+            android:padding="@dimen/dp_5"
+            android:text="Oct 7, 2016 10:12 AM"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+
+        <TextView
+
+            android:id="@+id/tv_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_date"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:text="@string/table"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+
+        <TextView
+
+            android:id="@+id/tv_table_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_served_by_value"
+            android:layout_below="@+id/tv_date"
+            android:layout_toRightOf="@+id/tv_table"
+            android:padding="@dimen/dp_5"
+            android:text="Take Out 1"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_served_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_table"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:text="@string/served_by"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_served_by_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_table"
+            android:layout_toRightOf="@+id/tv_served_by"
+            android:padding="@dimen/dp_5"
+            android:text="Administor"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+
+        <LinearLayout
+            android:id="@+id/include"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_served_by"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/item"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/price"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_qa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="@string/ea"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_qty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="@string/qty"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_totaprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:text="@string/price"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@+id/include"
+            android:background="@color/colorDarkGrey" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_receipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="@dimen/dp_5" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@+id/rv_receipt"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:background="@color/colorDarkGrey" />
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/include_subtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:weightSum="4">
+
+
+            <TextView
+                android:id="@+id/tv_subtotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="Sub Amount"
+                android:layout_weight="3.3"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+
+            <TextView
+
+                android:id="@+id/tv_subtotal_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:layout_weight=".7"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <GridLayout
+
+            android:layout_below="@+id/view1"
+            android:id="@+id/tax_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            >
+
+
+        </GridLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/include_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tax_container"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:weightSum="4">
+
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="Total Amount"
+                android:layout_weight="3.3"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+
+                android:id="@+id/tv_total_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:layout_weight=".7"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@+id/tax_container"
+            android:background="@color/colorDarkGrey" />
+
+
+
+        <!--  -->
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            >
+            <TextView
+                android:id="@+id/tv_discovery"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_5"
+                android:layout_margin="@dimen/dp_4"
+                android:text="Discovery"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimary"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_printer_series"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimary"
+                android:text="Printer Series"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/spnModel"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/dp_5"
+                android:layout_marginStart="@dimen/dp_2"
+                android:entries="@array/table_list"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <TextView
+                android:layout_margin="@dimen/dp_4"
+                android:id="@+id/tv_print"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_5"
+                android:text="Print"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/drawable_btn"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

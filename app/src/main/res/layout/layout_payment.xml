@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="@dimen/dp_5"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_pre_total"
+        android:layout_width="wrap_content"
+        android:text="Previous Order Payment"
+        android:textStyle="bold"
+        android:padding="@dimen/dp_2"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_pre_total_value"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/tv_pre_total"
+        android:text="$200.00"
+        android:padding="@dimen/dp_2"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_ongoing_total"
+        android:layout_width="wrap_content"
+        android:text="Ongoing Order Payment"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_pre_total"
+        android:padding="@dimen/dp_2"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_ongoing_total_value"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/tv_ongoing_total"
+        android:text="$400.00"
+        android:layout_below="@+id/tv_pre_total"
+        android:padding="@dimen/dp_2"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_service_tax"
+        android:layout_width="wrap_content"
+        android:text="Service Tax @ 6%"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_ongoing_total"
+        android:padding="@dimen/dp_2"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_service_tax_value"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/tv_ongoing_total"
+        android:text="$400.00"
+        android:layout_below="@+id/tv_ongoing_total_value"
+        android:padding="@dimen/dp_2"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_vat"
+        android:layout_width="wrap_content"
+        android:text="Vat @ 12%"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_service_tax"
+        android:padding="@dimen/dp_2"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_vat_value"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/tv_ongoing_total"
+        android:text="$400.00"
+        android:layout_below="@+id/tv_service_tax_value"
+        android:padding="@dimen/dp_2"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tv_vat"
+        android:layout_alignStart="@+id/tv_vat"
+        android:layout_alignEnd="@+id/tv_vat_value"
+        android:layout_height="@dimen/dp_1" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:text="Total Payable Amount"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_line"
+        android:padding="@dimen/dp_2"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_total_value"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/tv_ongoing_total"
+        android:text="$400.00"
+        android:layout_below="@+id/tv_line"
+        android:padding="@dimen/dp_2"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f95612</color>
+    <color name="colorPrimaryDark">#912d03</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorOfTable">#e7ff8340</color>
+    <color name="colorTransparentWhite">#e8ffffff</color>
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorGrey">#d7d5d5</color>
+    <color name="colorDarkGrey">#7c7979</color>
+    <color name="colorGreen">#25cc60</color>
+    <color name="colorBlue">#20a9e2</color>
+    <color name="colorYallow">#e29414</color>
+    <color name="colorRed">#85090c</color>
+    <color name="colorListGrey">#eeeeee</color>
+    <color name="colorTextGrey">#545454</color>
+    <color name="colorTabGrey">#F7F8FC</color>
+    <color name="colorTextdarkGrey">#716E6D</color>
+    <color name="colorPrimaryDarkBorder">#c94913</color>
+    <color name="colorBlueBorder">#33b7ed</color>
+    <color name="colorEditTextGrey">#dfe0e2</color>
+</resources>

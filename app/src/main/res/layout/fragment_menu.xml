@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bg"
+    tools:context="com.tabqy1.fragments.MenuFragment">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/dp_5"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+             />
+
+
+        <TextView
+            android:id="@+id/tv_productName"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="@dimen/dp_5"
+            android:visibility="gone"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_productDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/colorDarkGrey"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:maxLines="2" />
+
+        <TextView
+            android:id="@+id/tv_productPrice"
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_5"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/menu_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

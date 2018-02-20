@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    tool:context="com.tabqy1.activity.DashBoradActivity"
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/TitleMediumTextViewStyle"
+        android:id="@+id/tvMenuType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_36"
+        android:text="Afgani Dish"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10"
+        android:background="@drawable/menu_item_selector"
+        android:textColor="@color/colorWhite"
+       />
+</LinearLayout>

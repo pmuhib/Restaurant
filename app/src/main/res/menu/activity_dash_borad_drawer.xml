@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/table"
+            android:icon="@drawable/m_table_icon"
+            android:title="@string/table" />
+    </group>
+
+    <group
+        android:id="@+id/gr2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/m_dashboard_icon"
+            android:title="@string/dashboard" />
+    </group>
+
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu"
+            android:icon="@drawable/m_menu_icon"
+            android:title="@string/menu" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp4"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/today_s_special"
+            android:icon="@drawable/m_today_special_icon"
+            android:title="@string/today_s_special" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/grp5"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/hot_deal"
+            android:icon="@drawable/m_hot_deals_icon"
+            android:title="@string/hot_deal" />
+    </group>
+    <group
+        android:id="@+id/grp6"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/order_in_progress"
+            android:icon="@drawable/m_order_in_progress_icon"
+            android:title="@string/order_in_progress" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp7"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/order_history"
+            android:icon="@drawable/m_order_history_icon"
+            android:title="@string/order_history" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp8"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/m_feedback_icon"
+            android:title="@string/feedback" />
+    </group>
+
+    <group
+        android:id="@+id/grp9"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/about_restaurant"
+            android:icon="@drawable/m_about_restaurant_icon"
+            android:title="@string/about_restaurant" />
+    </group>
+
+    <group
+        android:id="@+id/grp11"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/m_my_profile_icon"
+            android:title="@string/my_profile" />
+    </group>
+    <group
+        android:id="@+id/grp10"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/log_out"
+            android:icon="@drawable/m_log_out_icon"
+            android:title="@string/logout" />
+    </group>
+</menu>

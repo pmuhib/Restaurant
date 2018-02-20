@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.tabqy1.fragments.HomeFragment">
+
+     <TextView
+         android:id="@+id/tvMenu"
+         android:text="@string/menu"
+         android:gravity="center"
+         android:textStyle="bold"
+         android:drawableTop="@drawable/menu_icon_selector"
+         android:padding="@dimen/dp_28"
+         android:textColor="@drawable/text_selector"
+         android:background="@drawable/background_selector"
+         android:textAppearance="?android:textAppearanceMedium"
+         android:layout_margin="@dimen/dp_16"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTodaySpecial"
+        android:text="@string/today_special"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textColor="@drawable/text_selector"
+        android:background="@drawable/background_selector"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/today_special_icon_selector"
+        android:padding="@dimen/dp_16"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_margin="@dimen/dp_16"
+        android:layout_toRightOf="@+id/tvMenu"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvHotDeal"
+        android:text="@string/hot_deal"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp_16"
+        android:textStyle="bold"
+        android:textColor="@drawable/text_selector"
+        android:drawableTop="@drawable/hotdeal_icon_selector"
+        android:padding="@dimen/dp_28"
+        android:background="@drawable/background_selector"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_toRightOf="@+id/tvTodaySpecial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvOrderProgress"
+        android:text="@string/order_progress"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@drawable/text_selector"
+        android:drawableTop="@drawable/order_history_progress_icon_selector"
+        android:padding="@dimen/dp_28"
+        android:background="@drawable/background_selector"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_margin="@dimen/dp_16"
+        android:layout_below="@+id/tvMenu"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvOrderHistory"
+        android:text="@string/order_n_history"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@drawable/text_selector"
+        android:drawableTop="@drawable/order_history_icon_selector"
+        android:padding="@dimen/dp_28"
+        android:background="@drawable/background_selector"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_margin="@dimen/dp_16"
+        android:layout_below="@+id/tvTodaySpecial"
+        android:layout_toRightOf="@+id/tvOrderProgress"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:text="@string/feedback"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@drawable/text_selector"
+        android:drawableTop="@drawable/feedback_icon_selector"
+        android:padding="@dimen/dp_28"
+        android:background="@drawable/background_selector"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_margin="@dimen/dp_16"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tvHotDeal"
+        android:layout_toRightOf="@+id/tvOrderHistory"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

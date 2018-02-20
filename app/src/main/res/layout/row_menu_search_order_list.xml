@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/flImage"
+                    android:layout_width="@dimen/dp_110"
+                    android:padding="@dimen/dp_5"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_70"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/llContent"
+                    android:layout_width="@dimen/dp_220"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/flImage"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_alignBottom="@+id/flImage">
+
+                        <TextView
+                            style="@style/TitleLargeTextViewStyle"
+                            android:id="@+id/tvItemName"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Apple"/>
+
+
+
+                    <TextView
+                        style="@style/GreySmallTextViewStyle"
+                        android:id="@+id/tvItemDesc"
+                        android:padding="@dimen/dp_5"
+                        android:lines="3"
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextdarkGrey"
+                        android:text="lorium ipsum dolor isit"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/TitleLargeTextViewStyle"
+                            android:id="@+id/tvItemPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$10"/>
+
+                        <TextView
+                            style="@style/TitleLargeTextViewStyle"
+                            android:id="@+id/tv_available"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_5"
+                            android:textColor="@color/colorRed"
+                            android:text="@string/sold_out"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAddDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/llContent"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ivAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/add_icon"/>
+                    <TextView
+                        style="@style/TitleLargeTextViewStyle"
+                        android:id="@+id/tvCount"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:text="2"/>
+
+                    <ImageButton
+                        android:id="@+id/ivRemove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/delete_icon"/>
+                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/ivCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/tick_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/llAddDelete"
+                    android:layout_toEndOf="@+id/llAddDelete"
+                    android:layout_marginRight="@dimen/dp_5"/>
+
+            </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorTextdarkGrey"
+        android:layout_gravity="bottom"
+
+        />
+
+</FrameLayout>

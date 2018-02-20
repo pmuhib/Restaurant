@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tabqy1.fragments.OrderProgressFragment">
+
+    <!-- our tablayout to display tabs  -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        android:background="?attr/colorBackgroundFloating"
+        android:minHeight="?attr/actionBarSize"
+        app:tabPadding="0dp"
+        app:tabBackground="@drawable/tab_background_selector"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <include layout="@layout/header_order_in_progress_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayout"
+        android:id="@+id/layout"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvOrderHistory"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="wrap_content" android:layout_below="@+id/layout">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

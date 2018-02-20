@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.tabqy1.fragments.ThankYouFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_240"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/dp_240">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_10"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:text="@string/thank_you_after_feedback"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dp_30"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:lineSpacingExtra="@dimen/dp_2"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/thank_you_for_giving_us_opportunity_to_service_you"
+            android:layout_height="0dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_please_visit"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_margin="@dimen/dp_30"
+            android:layout_gravity="center_horizontal|bottom"
+            android:orientation="horizontal"
+            android:background="@drawable/thankyou_btn01"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:drawablePadding="@dimen/dp_5"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:drawableLeft="@drawable/arrow_icon"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/please_visit_again"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

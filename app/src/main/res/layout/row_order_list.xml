@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            app:cardCornerRadius="@dimen/dp_5"
+            app:cardElevation="@dimen/dp_5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/flImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5">
+
+                    <ImageView
+                        android:id="@+id/iv_item"
+                        android:layout_width="@dimen/dp_90"
+                        android:scaleType="fitXY"
+                        android:layout_height="@dimen/dp_70"
+                        android:src="@mipmap/default_image" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/llContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/flImage"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvItemName"
+                            style="@style/TitleLargeTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp_3"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:text="Apple" />
+
+                        <TextView
+                            android:id="@+id/tvItemDesc"
+                            style="@style/GreySmallTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="lorium ipsum dolor isit"
+                            android:padding="@dimen/dp_3"
+                            android:lines="3"
+                            android:ellipsize="end"
+                            android:textColor="@color/colorTextdarkGrey" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tvAssociateTxt"
+                                style="@style/GreySmallTextViewStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_3"
+                                android:ellipsize="end"
+                                android:textStyle="bold"
+                                android:text="Associate Items : "
+                                android:textColor="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/tvAssociate"
+                                style="@style/GreySmallTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_3"
+                                android:ellipsize="end"
+                                android:text=""
+                                android:textColor="@color/colorGreen" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/tvItemPrice"
+                            style="@style/TitleLargeTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp_3"
+                            android:text="$10" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llAddDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_toRightOf="@+id/llContent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/ivAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/add_icon" />
+
+                        <TextView
+                            android:id="@+id/tvCount"
+                            style="@style/TitleLargeTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_8"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:gravity="center"
+                            android:text="2" />
+
+                        <ImageButton
+                            android:id="@+id/ivRemove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/delete_icon" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top|end"
+        android:src="@drawable/cross_icon" />
+
+</FrameLayout>

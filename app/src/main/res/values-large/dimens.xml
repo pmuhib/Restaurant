@@ -1,0 +1,99 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="header_height">48dp</dimen>
+    <dimen name="header_padding">16dp</dimen>
+
+    <!--Screen margins/padding, per the Android Design Guidelines-->
+        <dimen name="dp_2">3dp</dimen>
+        <dimen name="dp_3">4.5dp</dimen>
+        <dimen name="dp_4">6dp</dimen>
+        <dimen name="dp_5">7.5dp</dimen>
+        <dimen name="dp_6">9dp</dimen>
+        <dimen name="dp_8">12dp</dimen>
+        <dimen name="dp_10">15dp</dimen>
+        <dimen name="dp_12">18dp</dimen>
+        <dimen name="dp_14">21dp</dimen>
+        <dimen name="dp_16">24dp</dimen>
+        <dimen name="dp_18">27dp</dimen>
+        <dimen name="dp_20">30dp</dimen>
+        <dimen name="dp_24">36dp</dimen>
+        <dimen name="dp_28">42dp</dimen>
+        <dimen name="dp_30">45dp</dimen>
+        <dimen name="dp_32">48dp</dimen>
+        <dimen name="dp_36">54dp</dimen>
+        <dimen name="dp_40">60dp</dimen>
+        <dimen name="dp_44">66dp</dimen>
+        <dimen name="dp_48">72dp</dimen>
+        <dimen name="dp_50">75dp</dimen>
+        <dimen name="dp_54">81dp</dimen>
+        <dimen name="dp_58">87dp</dimen>
+        <dimen name="dp_60">90dp</dimen>
+        <dimen name="dp_64">96dp</dimen>
+        <dimen name="dp_65">97.5dp</dimen>
+        <dimen name="dp_70">105dp</dimen>
+        <dimen name="dp_75">112.5dp</dimen>
+        <dimen name="dp_80">120dp</dimen>
+        <dimen name="dp_85">127.5dp</dimen>
+        <dimen name="dp_90">135dp</dimen>
+        <dimen name="dp_95">142.5dp</dimen>
+        <dimen name="dp_100">150dp</dimen>
+        <dimen name="dp_110">165dp</dimen>
+        <dimen name="dp_120">180dp</dimen>
+        <dimen name="dp_130">195dp</dimen>
+        <dimen name="dp_140">210dp</dimen>
+        <dimen name="dp_150">225dp</dimen>
+        <dimen name="dp_160">240dp</dimen>
+        <dimen name="dp_170">255dp</dimen>
+        <dimen name="dp_180">270dp</dimen>
+        <dimen name="dp_190">285dp</dimen>
+        <dimen name="dp_200">300dp</dimen>
+        <dimen name="dp_220">330dp</dimen>
+        <dimen name="dp_240">360dp</dimen>
+        <dimen name="dp_260">390dp</dimen>
+        <dimen name="dp_280">420dp</dimen>
+        <dimen name="dp_300">450dp</dimen>
+        <dimen name="dp_350">525dp</dimen>
+
+    <dimen name="dp_400">600dp</dimen>
+    <dimen name="dp_500">750dp</dimen>
+
+
+
+    <!--Screen text sizes, per the Android Design Guidelines-->
+        <dimen name="text_size_8">8sp</dimen>
+        <dimen name="text_size_10">10sp</dimen>
+        <dimen name="text_size_12">12sp</dimen>
+        <dimen name="text_size_14">14sp</dimen>
+        <dimen name="text_size_16">16sp</dimen>
+        <dimen name="text_size_18">18sp</dimen>
+        <dimen name="text_size_20">20sp</dimen>
+        <dimen name="text_size_22">22sp</dimen>
+        <dimen name="text_size_24">24sp</dimen>
+        <dimen name="text_size_26">26sp</dimen>
+        <dimen name="text_size_28">28sp</dimen>
+        <dimen name="text_size_30">30sp</dimen>
+        <dimen name="text_size_32">32sp</dimen>
+        <dimen name="text_size_34">34sp</dimen>
+        <dimen name="text_size_36">36sp</dimen>
+        <dimen name="text_size_38">38sp</dimen>
+        <dimen name="text_size_40">40sp</dimen>
+        <dimen name="dp_1">1dp</dimen>
+        <dimen name="nav_drawer_width">260dp</dimen>
+        <dimen name="nav_drawer_width_new">390dp</dimen>
+
+
+        <dimen name="main_activity_left_margin">40dp</dimen>
+        <dimen name="main_activity_right_margin">40dp</dimen>
+        <dimen name="main_activity_top_margin">10dp</dimen>
+        <dimen name="main_activity_bottom_margin">10dp</dimen>
+
+
+    </resources>
+
+
