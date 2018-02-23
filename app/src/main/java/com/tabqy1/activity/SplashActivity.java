@@ -18,9 +18,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         handler.postDelayed(runnable,2000);
-
     }
-
 
     private Runnable runnable = new Runnable() {
         @Override
@@ -35,6 +33,7 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
+
         }
     };
 
